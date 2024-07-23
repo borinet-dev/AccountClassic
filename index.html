@@ -1,33 +1,15 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>와썹 계정관리</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
-        }
-        .iframe-container {
-            position: relative;
-            width: 100%;
-            max-width: 100%;
-            height: 100%;
-            margin: auto;
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
+    <title>Hide iframe src</title>
 </head>
 <body>
-    <div class="iframe-container">
-        <iframe src="https://l2wassub.org/AccountClassic/" frameborder="0" allowfullscreen></iframe>
-    </div>
+    <iframe id="myIframe" frameborder="0" allowfullscreen=""></iframe>
+
+    <script>
+        document.getElementById('myIframe').src = 'https://l2wassub.org/AccountClassic/';
+    </script>
 </body>
 </html>
